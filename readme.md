@@ -13,7 +13,8 @@ setupConfig({
 });
 ```
 
-### Component Authors
+
+# Project Setup
 
 First, install the package:
 
@@ -70,7 +71,7 @@ export * from './index';
 }
 ```
 
-### Consuming the Config
+### Consuming Config
 
 #### my-component.tsx
 ```tsx
@@ -90,5 +91,4 @@ export class MyComponent {
     console.log(this.config.get('logLevel'));
   }
 }
-
 ```
