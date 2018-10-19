@@ -1,0 +1,44 @@
+{
+  "name": "stencil-config",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "tsc && npm run rollup",
+    "watch": "tsc --watch",
+    "rollup": "rollup -c",
+    "version": "npm run build",
+    "release": "np",
+    "lint": "tslint --project tsconfig.json",
+    "test": "jest",
+    "test.watch": "jest --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.5.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.2",
+    "typescript": "3.0.3"
+  },
+  "peerDependencies": {
+    "@stencil/core": "^0.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natemoo-re/stencil-config.git"
+  },
+  "author": "Ionic Team",
+  "homepage": "https://github.com/natemoo-re/stencil-config/",
+  "description": "Utils for creating configurable Stencil Components",
+  "keywords": [
+    "stencil",
+    "config",
+    "configuration"
+  ]
+}
